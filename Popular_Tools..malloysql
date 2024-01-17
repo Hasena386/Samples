@@ -1,0 +1,6 @@
+>>>malloy
+// Popularity of DS Tools among Schools and Programs Surveyed
+Import "Data_Science_Survey.malloy"
+
+# transpose
+run: Populartools->summary_by_tool 

@@ -1,0 +1,15 @@
+>>>malloy
+// DS Tool Combo among Schools and Programs Surveyed
+Import "Data_Science_Survey.malloy"
+
+Source: Combo is Populartools extend {
+    
+    Measure: No_of_Combinations is count(Data_Science_Tool)
+View: Tools_combo is {
+Aggregate:No_of_Combinations
+nest:Tool_Combinations is summary_by_toolcombo}
+
+}
+
+run: Combo->Tools_combo
+    

@@ -1,0 +1,10 @@
+>>>malloy
+// Survey Overveiw 
+Import "Data_Science_Survey.malloy"
+
+run: Populartools->{
+    Group_by:Survey_year
+    Aggregate: No_of_sch_using_Jupyter_Notebook, No_of_sch_using_JupyterHub, No_of_sch_using_IPython_Terminal, No_of_sch_using_IPython_Parallel, No_of_sch_using_Interactive_Widgets, No_of_sch_using_nbconvert, No_of_sch_using_nbgrader
+    # bar_chart
+    nest: Overview is by_dstool_combo
+    }

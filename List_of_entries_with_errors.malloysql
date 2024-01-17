@@ -1,0 +1,14 @@
+>>>malloy
+// Listing records with errors
+Import "Data_Science_Survey.malloy"
+Source: Errornous_records is Populartools extend {
+
+    measure: No_of_records_with_error is count() where: School = null 
+
+View: Empty_recs is {
+    Group_by:YYYY is Survey_year::string
+    Aggregate: Error is No_of_records_with_error
+    nest: List is {Select: School, Course, Student_range, Instructors, Data_Science_Tool,Programing_language, Challenges,survey_date}
+}
+}
+run: Errornous_records-> Empty_recs 

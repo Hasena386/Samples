@@ -1,0 +1,32 @@
+//>>>malloy
+source: rawdata is duckdb.table('responses.csv') extend {   
+    rename: survey_date is column00 
+    rename: course_name is column01  
+    rename: school is column02
+    rename: webpage is column03
+    rename: course_material is column04
+    rename: instructors is column05
+    rename: frequency is column06
+    rename: no_of_students is column07
+    rename: course_level is column08
+    rename: programing_experience is column09
+    rename: related_fields is column10
+    rename: execution_pain is column11
+    rename: data_science_tool is column12
+    rename: extension is column13
+    rename: access_type is column14
+    rename: prog_language is column15
+    rename: kernel is column16
+    rename: assignment_ty is column17
+    rename: question_ty is column18
+    rename: grade is column19
+    rename: exam_metrics is column20
+    rename: other_metrics is column21
+    rename: grading_pain is column22
+    rename: other_uses is column23
+    rename: suggestions is column24
+view: filtered is {
+     Select: survey_date,school,course_name,data_science_tool,prog_language,no_of_students,instructors,execution_pain
+}
+}
+
