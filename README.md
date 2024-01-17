@@ -1,1 +1,1 @@
-Malloy practice samples
+CSV to insight/analytic using Malloy
