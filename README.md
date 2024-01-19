@@ -1,5 +1,7 @@
 CSVs to insight with Malloy.
 
+This folder contains ready to run Malloy files to demonstrate capability in data modeling, query buiilding and data transfromations from CSV to Duckdb tables, raw data to useful insights.  
+
 In this folder there are 7 files as following:
 
 * one CSV file - 'resonses.csv' which contains survey data for data science tools among universities.
